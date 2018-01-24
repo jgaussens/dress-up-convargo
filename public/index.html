@@ -142,28 +142,27 @@
 	      </ul>
 	      <form class="form-wrapper">
 	        <fieldset class="section is-active">
-	          <h4>Shipping Details</h4>
+	          <h4>Enter your Shipping Details</h4>
 	          <input type="text" name="trucker" id="trucker" placeholder="Trucker Name">
 	          <input type="text" name="shipper" id="shipper" placeholder="Shipper's Name (Your Name)">
 	          <div class="button">Next</div>
 	        </fieldset>
 	        <fieldset class="section">
 	          <h3>Distance</h3>
-	          <input type="text" name="trucker" id="trucker" placeholder="Trucker Name">
-	          <input type="text" name="shipper" id="shipper" placeholder="Shipper's Name (Your Name)">
+	          <input type="number" class = "price-by-km" name="price" id="price" placeholder="Price by km">
+	          <input type="number" class = "distance" name="distance" id="distance" placeholder="Distance in km">
 	          <div class="button">Next</div>
 	        </fieldset>
 	        <fieldset class="section">
 	          <h3>Volume</h3>
-	          <input type="password" name="password" id="password" placeholder="Password">
-	          <input type="password" name="password2" id="password2" placeholder="Re-enter Password">
+	          <input type="number" class = "price-by-cubic" name="priceM3" id="priceM3" placeholder="Price by m3">
+	          <input type="number" class = "volume" name="volume" id="volume" placeholder="Volume in m3">
 	          <p> I do want the deductible option <input class="option" type="checkbox" placeholder="Deductible option"/> </p>
-	          
-	          <input class="submit button" type="submit" value="Sign Up">
+	          <button class="submit button" id="compute">Compute My Invoice</button>
+	          <!-- <input class="submit button" type="submit" value="Sign Up">-->
 	        </fieldset>
 	        <fieldset class="section">
 	          <h3>Invoice Quotation</h3>
-	          <p>Your account has now been created.</p>
 	          <div id="actors"></div>
 	          <div class="button">Reset Form</div>
 	        </fieldset>
@@ -172,7 +171,33 @@
     </div>
     </section>
     
+    <!-- Estimation of the price -->
     <!--
+    <section id="quotation">
+    
+	    <div class="container">
+		    <div class="wrapper">
+		        <div class="container">
+		      <div id="trucker">
+		      <input class="name" type="text" placeholder="Trucker name"/>
+		      <input class="price-by-km" type="number" placeholder="Price by km"/>
+		      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+		    </div>
+		    <div id="shipper">
+		      <input class="name" type="text" placeholder="Shipper name"/>
+		      <input class="distance" type="number" placeholder="Distance in km"/>
+		      <input class="volume" type="number" placeholder="Volume in m3"/>
+		      <input class="option" type="checkbox" placeholder="Deductible option"/>
+		    </div>
+		    <button id="compute">Compute</button>
+		    <div id="actors"></div>
+		</div>
+	</section>
+
+    -->
+    
+
+        <!--
     <fieldset class="section">
           <h3>Account Type</h3>
           <div class="row cf">
@@ -196,33 +221,6 @@
           <div class="button">Next</div>
         </fieldset>
     -->
-    
-    <!-- Estimation of the price -->
-    <section id="quotation">
-    
-    <div class="container">
-	    <div class="wrapper">
-	        <div class="container">
-	      <div id="trucker">
-	      <input class="name" type="text" placeholder="Trucker name"/>
-	      <input class="price-by-km" type="number" placeholder="Price by km"/>
-	      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-	    </div>
-	    <div id="shipper">
-	      <input class="name" type="text" placeholder="Shipper name"/>
-	      <input class="distance" type="number" placeholder="Distance in km"/>
-	      <input class="volume" type="number" placeholder="Volume in m3"/>
-	      <input class="option" type="checkbox" placeholder="Deductible option"/>
-	    </div>
-	    <button id="compute">Compute</button>
-	    <div id="actors"></div>
-  </div>
-	    </section>
-
-    
-    
-
-    
 
     
 
