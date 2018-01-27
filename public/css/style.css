@@ -206,3 +206,39 @@
 .form-wrapper input[type="radio"]:checked + label h4{
   color: #3498db;
 }
+
+
+
+/* Invoice */
+
+#formula{
+	margin-bottom: 35%;
+}
+
+.section .is-active{
+	display: block;
+	position: relative;
+}
+
+
+.table_invoice {
+font-family: sans-serif;
+-webkit-font-smoothing: antialiased;
+font-size: 115%;
+width: auto;
+overflow: auto;
+display: block;
+}
+.table_invoice th {
+background-color: rgb(112, 196, 105);
+font-weight: normal;
+color: white;
+padding: 20px 30px;
+text-align: center;
+}
+.table_invoice td {
+background-color: rgb(238, 238, 238);
+padding: 20px 30px;
+color: rgb(111, 111, 111);
+}
+

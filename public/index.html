@@ -104,24 +104,24 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">1. Shipper</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">1. You</h4>
+            <p class="text-muted">Enter your name, the distance of your shipping and the volume. Nothing else !</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">2. Distance</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">2. The Trucker</h4>
+            <p class="text-muted">Select a Trucker, and indicate it's prices</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">3. Volume</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">3. Deductible option</h4>
+            <p class="text-muted">Want to secure your shipping? Pay the deductible option. In case of accident, a compensation will be given to you.</p>
           </div>
           
         </div>
@@ -129,47 +129,52 @@
     </section>
     
     <section id="formQuotation">
-    <div class="container">
-    	<div class="col-lg-12 text-center">
-			<h2 class="section-heading text-uppercase">Compute my Quotation</h2>
-			<h3 class="section-subheading text-muted">Cheaper and Smarter than our Competitors. Sworn.</h3>
-		</div>
+	    <div class="container">
+	    	<div class="col-lg-12 text-center">
+				<h2 class="section-heading text-uppercase">Compute my Quotation</h2>
+				<h3 class="section-subheading text-muted">Cheaper and Smarter than our Competitors. Sworn.</h3>
+			</div>
 			<ul class="steps">
-	        <li class="is-active">1 - You</li>
-	        <li>2 - Trucker</li>
-	        <li>3 - Deductible</li>
-	      </ul>
-	      <form class="form-wrapper">
-	      <fieldset class="section is-active">
-	          <h3>Enter your Details</h3>
-	          <input type="text" class = "name"name="shipper" id="shipper" placeholder="Shipper's Name (Your Name)">
-	          <input type="number" class = "distance" name="distance" id="distance" placeholder="Distance in km">
-	          <input type="number" class = "volume" name="volume" id="volume" placeholder="Volume in m3">
-	          <div class="button">Next</div>
-	        </fieldset>
-	        <fieldset class="section">
-		        <div id="trucker">
-		          <h4>Enter your Trucker's Details</h4>
-		          <input type="text" class = "name" name="trucker" id="trucker" placeholder="Trucker Name">
-		          <input type="number" class = "price-by-km" name="price" id="price" placeholder="Price by km">
-		          <input type="number" class = "price-by-cubic" name="priceM3" id="priceM3" placeholder="Price by m3">
-	
-		          <div class="button">Next</div>
-		        </div>
-	        </fieldset>
-	        <fieldset class="section">
-	          <h3>Deductible Option</h3>
-	          <p> I do want the deductible option <input class="option" type="checkbox" placeholder="Deductible option"/> </p>
-	          <button class="submit button" id="compute">Compute My Invoice</button>
-	          <!-- <input class="submit button" type="submit" value="Sign Up">-->
-	        </fieldset>
-	        <fieldset class="section">
-	          <h3>Invoice Quotation</h3>
-	          <div id="actors"></div>
-	          <div class="button">Reset Form</div>
-	        </fieldset>
-	      </form>
-    </div>
+		        <li class="is-active">1 - You</li>
+		        <li>2 - Trucker</li>
+		        <li>3 - Deductible</li>
+			</ul>
+			<div id="formula">
+		    <form class="form-wrapper">
+				<fieldset class="section is-active">
+				  <h3>Enter your Details</h3>
+				  <input type="text" class = "name"name="shipper" id="shipper" placeholder="Shipper's Name (Your Name)">
+				  <input type="number" class = "distance" name="distance" id="distance" placeholder="Distance in km">
+				  <input type="number" class = "volume" name="volume" id="volume" placeholder="Volume in m3">
+				  <div class="button">Next</div>
+				</fieldset>
+				<fieldset class="section">
+				    <div id="trucker">
+				      <h4>Enter your Trucker's Details</h4>
+				      <input type="text" class = "name" name="trucker" id="trucker" placeholder="Trucker Name">
+				      <input type="number" class = "price-by-km" name="price" id="price" placeholder="Price by km">
+				      <input type="number" class = "price-by-cubic" name="priceM3" id="priceM3" placeholder="Price by m3">
+				
+				      <div class="button">Next</div>
+				    </div>
+				</fieldset>
+				<fieldset class="section">
+				  <h3>Deductible Option</h3>
+				  <p> I do want the deductible option <input class="option" type="checkbox" placeholder="Deductible option"/> </p>
+				  <button class="submit button" id="compute">Compute My Invoice</button>
+				  <!-- <input class="submit button" type="submit" value="Sign Up">-->
+				</fieldset>
+				<fieldset class="section">
+				  <h3>Invoice Quotation</h3>
+				  	
+				  <div id="actors">
+				      
+				  </div>
+				  <div class="button" style="position: relative;">Reset Form</div>
+				</fieldset>
+		    </form>
+			</div>
+	    </div>
     </section>
     
     <!-- Estimation of the price -->
