@@ -8,12 +8,9 @@
     const template = actors.map(actor => {
       return `
         <div class="actor">
-        	<table class="table_invoice">
-				<tbody>
-					<tr>
-					<td>${actor.who}</td>
-			          <td>${actor.type}</td>
-			          <td>${actor.amount}</td>
+					<span id="actorWho">${actor.who} is</span>
+			          <span id="actorType">${actor.type}ed</span>
+			          <span id="actorAmount">${actor.amount} $</span>
 					</tr>
 				</tbody>
 			</table>
@@ -23,6 +20,7 @@
 
     div.innerHTML = template;
     fragment.appendChild(div);
+    document.querySelector('#actors').innerHTML = '';
     document.querySelector('#actors').innerHTML = '';
     document.querySelector('#actors').appendChild(fragment);
   };
@@ -41,6 +39,9 @@
     return;
   });
 })();
+
+
+
 
 /* Form Modified */
 $(document).ready(function(){

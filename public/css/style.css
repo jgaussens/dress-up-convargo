@@ -211,6 +211,16 @@
 
 /* Invoice */
 
+#actors .actor .actorType:nth-child(2){
+	color: red;
+}
+
+#actors .actor{
+	text-transform: capitalize;
+}
+
+
+
 #formula{
 	margin-bottom: 35%;
 }
@@ -220,6 +230,9 @@
 	position: relative;
 }
 
+#actors{
+	margin-bottom: 3%;
+}
 
 .table_invoice {
 font-family: sans-serif;
