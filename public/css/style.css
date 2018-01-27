@@ -209,7 +209,14 @@
 
 
 
-/* Invoice */
+#presentation .row{
+	font-size: 2rem;
+}
+
+
+#presentation img{
+	width: 130%;
+}
 
 #actors .actor .actorType:nth-child(2){
 	color: red;
